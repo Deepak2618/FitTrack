@@ -112,7 +112,7 @@ export default function AuthPage() {
                           <FormItem>
                             <FormLabel>Username</FormLabel>
                             <FormControl>
-                              <Input placeholder="your-username" {...field} />
+                              <Input placeholder="your-username" {...field} value={field.value || ''} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -126,7 +126,7 @@ export default function AuthPage() {
                           <FormItem>
                             <FormLabel>Password</FormLabel>
                             <FormControl>
-                              <Input type="password" placeholder="••••••••" {...field} />
+                              <Input type="password" placeholder="••••••••" {...field} value={field.value || ''} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -171,7 +171,7 @@ export default function AuthPage() {
                             <FormItem>
                               <FormLabel>First Name</FormLabel>
                               <FormControl>
-                                <Input placeholder="John" {...field} />
+                                <Input placeholder="John" {...field} value={field.value || ''} />
                               </FormControl>
                               <FormMessage />
                             </FormItem>
@@ -185,7 +185,7 @@ export default function AuthPage() {
                             <FormItem>
                               <FormLabel>Last Name</FormLabel>
                               <FormControl>
-                                <Input placeholder="Doe" {...field} />
+                                <Input placeholder="Doe" {...field} value={field.value || ''} />
                               </FormControl>
                               <FormMessage />
                             </FormItem>
@@ -200,7 +200,7 @@ export default function AuthPage() {
                           <FormItem>
                             <FormLabel>Username</FormLabel>
                             <FormControl>
-                              <Input placeholder="your-username" {...field} />
+                              <Input placeholder="your-username" {...field} value={field.value || ''} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -214,7 +214,7 @@ export default function AuthPage() {
                           <FormItem>
                             <FormLabel>Password</FormLabel>
                             <FormControl>
-                              <Input type="password" placeholder="••••••••" {...field} />
+                              <Input type="password" placeholder="••••••••" {...field} value={field.value || ''} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -228,7 +228,7 @@ export default function AuthPage() {
                           <FormItem>
                             <FormLabel>Confirm Password</FormLabel>
                             <FormControl>
-                              <Input type="password" placeholder="••••••••" {...field} />
+                              <Input type="password" placeholder="••••••••" {...field} value={field.value || ''} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
