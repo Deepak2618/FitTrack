@@ -69,7 +69,7 @@ export default function DashboardPage() {
   const recentWorkouts = workouts?.slice(0, 3) || [];
 
   return (
-    <MainLayout>
+    <MainLayout showHero={true}>
       {/* Workout Modal */}
       <WorkoutModal isOpen={showWorkoutModal} onClose={() => setShowWorkoutModal(false)} />
       

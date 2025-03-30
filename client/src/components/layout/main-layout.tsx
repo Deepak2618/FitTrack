@@ -6,6 +6,8 @@ import { PremiumBadge } from "@/components/ui/premium-badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { OnboardingModal } from "@/components/modals/onboarding-modal";
 import { SubscriptionModal } from "@/components/modals/subscription-modal";
+import { HeroSection } from "@/components/layout/hero-section";
+import { Footer } from "@/components/layout/footer";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -38,9 +40,10 @@ import {
 
 interface MainLayoutProps {
   children: React.ReactNode;
+  showHero?: boolean;
 }
 
-export function MainLayout({ children }: MainLayoutProps) {
+export function MainLayout({ children, showHero = false }: MainLayoutProps) {
   const [location] = useLocation();
   const { user, logoutMutation, showOnboardingModal, setShowOnboardingModal } = useAuth();
   
@@ -290,10 +293,16 @@ export function MainLayout({ children }: MainLayoutProps) {
         </div>
       </header>
       
+      {/* Hero Section - Conditional */}
+      {showHero && <HeroSection />}
+      
       {/* Main Content */}
       <main className="flex-1 py-8 px-4">
         {children}
       </main>
+      
+      {/* Footer */}
+      <Footer />
       
       {/* Mobile Navigation */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 z-30">
