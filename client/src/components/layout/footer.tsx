@@ -14,7 +14,7 @@ export function Footer() {
       {/* Decorative elements */}
       <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 via-teal-500 to-blue-500 opacity-70"></div>
       
-      <div className="container relative z-10 mx-auto px-4 py-12">
+      <div className="relative z-10 w-full px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">

@@ -69,7 +69,7 @@ export function MainLayout({ children, showHero = false }: MainLayoutProps) {
   };
   
   return (
-    <div className="min-h-screen max-w-screen-xl mx-auto flex flex-col dark:bg-darkmode">
+    <div className="min-h-screen w-full flex flex-col dark:bg-darkmode">
       {/* Onboarding Modal */}
       <OnboardingModal 
         isOpen={showOnboardingModal} 
@@ -83,8 +83,8 @@ export function MainLayout({ children, showHero = false }: MainLayoutProps) {
       />
       
       {/* Header */}
-      <header className="sticky top-0 z-40 backdrop-blur-md bg-white/80 dark:bg-darkmode/80 border-b border-gray-200 dark:border-gray-800">
-        <div className="container mx-auto px-4">
+      <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-white/80 dark:bg-darkmode/80 border-b border-gray-200 dark:border-gray-800">
+        <div className="w-full px-6">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex items-center">
@@ -297,7 +297,7 @@ export function MainLayout({ children, showHero = false }: MainLayoutProps) {
       {showHero && <HeroSection />}
       
       {/* Main Content */}
-      <main className="flex-1 py-8 px-4">
+      <main className="flex-1 py-8 px-6 w-full">
         {children}
       </main>
       
