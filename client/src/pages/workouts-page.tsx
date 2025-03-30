@@ -12,7 +12,8 @@ import {
   Check,
   ArrowRight,
   PlayCircle,
-  PenLine
+  PenLine,
+  Flame
 } from "lucide-react";
 
 export default function WorkoutsPage() {
