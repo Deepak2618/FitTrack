@@ -6,25 +6,25 @@ export function HeroSection() {
   return (
     <div className="relative overflow-hidden">
       {/* Background gradients */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 via-transparent to-pink-500/20 dark:from-purple-500/30 dark:to-pink-500/30"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 via-transparent to-teal-500/20 dark:from-purple-500/30 dark:to-teal-500/30"></div>
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
       
       {/* Animated shapes */}
       <div className="absolute top-1/4 -right-16 w-72 h-72 bg-purple-500 opacity-20 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute -bottom-8 -left-16 w-72 h-72 bg-pink-500 opacity-20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute -bottom-8 -left-16 w-72 h-72 bg-teal-500 opacity-20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
       <div className="absolute top-2/3 left-1/4 w-48 h-48 bg-blue-500 opacity-20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
       
       <div className="container relative z-10 mx-auto px-4 py-16 sm:py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="max-w-xl">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-teal-600 dark:from-purple-400 dark:to-teal-400">
               Track Your Fitness Journey Like Never Before
             </h1>
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
               FitTrack helps you create personalized workout plans, track your progress, and achieve your fitness goals with smart analytics and AI-powered recommendations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-gradient-to-r from-purple-600 to-pink-600 btn-glow border-0 text-white">
+              <Button size="lg" className="bg-gradient-to-r from-purple-600 to-teal-600 btn-glow border-0 text-white">
                 <Link href="/workouts" className="flex items-center">
                   Get Started <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
@@ -63,7 +63,7 @@ export function HeroSection() {
             { value: '24/7', label: 'Progress Tracking' },
           ].map((stat, index) => (
             <div key={index} className="text-center glass-panel py-4 px-2 rounded-lg">
-              <div className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 mb-2">{stat.value}</div>
+              <div className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-teal-600 mb-2">{stat.value}</div>
               <div className="text-gray-700 dark:text-gray-300">{stat.label}</div>
             </div>
           ))}

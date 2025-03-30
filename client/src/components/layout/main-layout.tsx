@@ -104,7 +104,7 @@ export function MainLayout({ children, showHero = false }: MainLayoutProps) {
                 <li>
                   <Link
                     href="/"
-                    className={`font-medium ${location === '/' ? 'active-nav' : ''}`}
+                    className={`font-medium text-gray-800 dark:text-gray-200 ${location === '/' ? 'active-nav' : ''}`}
                   >
                     Dashboard
                   </Link>
@@ -112,7 +112,7 @@ export function MainLayout({ children, showHero = false }: MainLayoutProps) {
                 <li>
                   <Link
                     href="/workouts"
-                    className={`font-medium ${location === '/workouts' ? 'active-nav' : ''}`}
+                    className={`font-medium text-gray-800 dark:text-gray-200 ${location === '/workouts' ? 'active-nav' : ''}`}
                   >
                     Workouts
                   </Link>
@@ -120,7 +120,7 @@ export function MainLayout({ children, showHero = false }: MainLayoutProps) {
                 <li>
                   <Link
                     href="/nutrition"
-                    className={`font-medium ${location === '/nutrition' ? 'active-nav' : ''}`}
+                    className={`font-medium text-gray-800 dark:text-gray-200 ${location === '/nutrition' ? 'active-nav' : ''}`}
                   >
                     Nutrition
                   </Link>
@@ -128,7 +128,7 @@ export function MainLayout({ children, showHero = false }: MainLayoutProps) {
                 <li>
                   <Link
                     href="/progress"
-                    className={`font-medium ${location === '/progress' ? 'active-nav' : ''}`}
+                    className={`font-medium text-gray-800 dark:text-gray-200 ${location === '/progress' ? 'active-nav' : ''}`}
                   >
                     Progress
                   </Link>
@@ -211,7 +211,7 @@ export function MainLayout({ children, showHero = false }: MainLayoutProps) {
                         <Link 
                           href="/" 
                           onClick={() => setMobileSheetOpen(false)}
-                          className={`flex items-center py-2 ${location === '/' ? 'text-primary font-semibold' : ''}`}
+                          className={`flex items-center py-2 text-gray-800 dark:text-gray-200 ${location === '/' ? 'text-primary font-semibold' : ''}`}
                         >
                           <Home className="mr-3 h-5 w-5" />
                           <span>Dashboard</span>
@@ -221,7 +221,7 @@ export function MainLayout({ children, showHero = false }: MainLayoutProps) {
                         <Link 
                           href="/workouts" 
                           onClick={() => setMobileSheetOpen(false)}
-                          className={`flex items-center py-2 ${location === '/workouts' ? 'text-primary font-semibold' : ''}`}
+                          className={`flex items-center py-2 text-gray-800 dark:text-gray-200 ${location === '/workouts' ? 'text-primary font-semibold' : ''}`}
                         >
                           <Dumbbell className="mr-3 h-5 w-5" />
                           <span>Workouts</span>
@@ -231,7 +231,7 @@ export function MainLayout({ children, showHero = false }: MainLayoutProps) {
                         <Link 
                           href="/nutrition" 
                           onClick={() => setMobileSheetOpen(false)}
-                          className={`flex items-center py-2 ${location === '/nutrition' ? 'text-primary font-semibold' : ''}`}
+                          className={`flex items-center py-2 text-gray-800 dark:text-gray-200 ${location === '/nutrition' ? 'text-primary font-semibold' : ''}`}
                         >
                           <Utensils className="mr-3 h-5 w-5" />
                           <span>Nutrition</span>
@@ -241,7 +241,7 @@ export function MainLayout({ children, showHero = false }: MainLayoutProps) {
                         <Link 
                           href="/progress" 
                           onClick={() => setMobileSheetOpen(false)}
-                          className={`flex items-center py-2 ${location === '/progress' ? 'text-primary font-semibold' : ''}`}
+                          className={`flex items-center py-2 text-gray-800 dark:text-gray-200 ${location === '/progress' ? 'text-primary font-semibold' : ''}`}
                         >
                           <BarChart3 className="mr-3 h-5 w-5" />
                           <span>Progress</span>
@@ -307,28 +307,28 @@ export function MainLayout({ children, showHero = false }: MainLayoutProps) {
       {/* Mobile Navigation */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 z-30">
         <div className="flex justify-around items-center p-3">
-          <Link href="/" className={`flex flex-col items-center py-1 ${location === '/' ? 'text-primary' : ''}`}>
+          <Link href="/" className={`flex flex-col items-center py-1 text-gray-700 dark:text-gray-300 ${location === '/' ? 'text-primary' : ''}`}>
             <Home className="h-5 w-5" />
             <span className="text-xs mt-1">Home</span>
           </Link>
           
-          <Link href="/workouts" className={`flex flex-col items-center py-1 ${location === '/workouts' ? 'text-primary' : ''}`}>
+          <Link href="/workouts" className={`flex flex-col items-center py-1 text-gray-700 dark:text-gray-300 ${location === '/workouts' ? 'text-primary' : ''}`}>
             <Dumbbell className="h-5 w-5" />
             <span className="text-xs mt-1">Workouts</span>
           </Link>
           
           <Link href="/workouts" className="flex flex-col items-center py-1">
-            <div className="bg-primary h-10 w-10 rounded-full flex items-center justify-center text-white">
+            <div className="bg-gradient-to-r from-purple-600 to-teal-600 h-10 w-10 rounded-full flex items-center justify-center text-white shadow-lg">
               <Plus className="h-5 w-5" />
             </div>
           </Link>
           
-          <Link href="/nutrition" className={`flex flex-col items-center py-1 ${location === '/nutrition' ? 'text-primary' : ''}`}>
+          <Link href="/nutrition" className={`flex flex-col items-center py-1 text-gray-700 dark:text-gray-300 ${location === '/nutrition' ? 'text-primary' : ''}`}>
             <Utensils className="h-5 w-5" />
             <span className="text-xs mt-1">Nutrition</span>
           </Link>
           
-          <Link href="/progress" className={`flex flex-col items-center py-1 ${location === '/progress' ? 'text-primary' : ''}`}>
+          <Link href="/progress" className={`flex flex-col items-center py-1 text-gray-700 dark:text-gray-300 ${location === '/progress' ? 'text-primary' : ''}`}>
             <BarChart3 className="h-5 w-5" />
             <span className="text-xs mt-1">Progress</span>
           </Link>
