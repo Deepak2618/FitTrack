@@ -138,12 +138,12 @@ export default function AuthPage() {
                           <Checkbox id="remember" />
                           <label
                             htmlFor="remember"
-                            className="text-sm text-gray-600 dark:text-gray-400"
+                            className="text-sm text-gray-600 dark:text-white"
                           >
                             Remember me
                           </label>
                         </div>
-                        <a href="#" className="text-sm text-accent hover:underline">
+                        <a href="#" className="text-sm text-accent hover:underline dark:text-purple-400">
                           Forgot password?
                         </a>
                       </div>
@@ -248,13 +248,13 @@ export default function AuthPage() {
               </Tabs>
             </CardContent>
             <CardFooter className="justify-center">
-              <p className="text-sm text-gray-600 dark:text-gray-400">
+              <p className="text-sm text-gray-600 dark:text-white">
                 {activeTab === "login" ? (
                   <>
                     Don't have an account?{" "}
                     <button 
                       onClick={() => setActiveTab("register")}
-                      className="text-accent font-semibold hover:underline"
+                      className="text-accent font-semibold hover:underline dark:text-purple-400"
                     >
                       Sign up
                     </button>
@@ -264,7 +264,7 @@ export default function AuthPage() {
                     Already have an account?{" "}
                     <button 
                       onClick={() => setActiveTab("login")}
-                      className="text-accent font-semibold hover:underline"
+                      className="text-accent font-semibold hover:underline dark:text-purple-400"
                     >
                       Sign in
                     </button>
