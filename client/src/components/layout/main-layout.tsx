@@ -33,6 +33,7 @@ import {
   LogOut,
   Menu,
   X,
+  Crown,
 } from "lucide-react";
 
 interface MainLayoutProps {
