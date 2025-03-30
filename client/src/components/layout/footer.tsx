@@ -159,17 +159,6 @@ export function Footer() {
             ))}
           </div>
         </div>
-        
-        {/* Featured on section with logos */}
-        <div className="mt-12 pt-8 border-t dark:border-gray-800">
-          <p className="text-center text-sm text-gray-700 dark:text-gray-300 mb-6">Featured in</p>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-80">
-            <img src="https://www.svgrepo.com/show/303161/forbes-logo.svg" alt="Forbes" className="h-6 dark:invert filter grayscale hover:grayscale-0 transition-all duration-300" />
-            <img src="https://www.svgrepo.com/show/303124/wired-logo.svg" alt="Wired" className="h-6 dark:invert filter grayscale hover:grayscale-0 transition-all duration-300" />
-            <img src="https://www.svgrepo.com/show/303114/techcrunch-logo.svg" alt="TechCrunch" className="h-6 dark:invert filter grayscale hover:grayscale-0 transition-all duration-300" />
-            <img src="https://www.svgrepo.com/show/303111/mens-health-logo.svg" alt="Men's Health" className="h-8 dark:invert filter grayscale hover:grayscale-0 transition-all duration-300" />
-          </div>
-        </div>
       </div>
     </footer>
   );
