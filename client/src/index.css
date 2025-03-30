@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .active-nav {
+    position: relative;
+  }
+  
+  .active-nav::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 3px;
+    background-color: #FF4757;
+    border-radius: 2px;
+  }
+  
+  .blur-bg {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  
+  .card {
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .progress-bar {
+    animation: progressAnimation 1.5s ease-out forwards;
+  }
+  
+  @keyframes progressAnimation {
+    0% { width: 0; }
+    100% { width: var(--width, 100%); }
+  }
+  
+  @media (max-width: 768px) {
+    .active-nav::after {
+      bottom: -4px;
+    }
+  }
+}
