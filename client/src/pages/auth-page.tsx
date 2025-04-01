@@ -73,7 +73,7 @@ export default function AuthPage() {
   return (
     <div className="min-h-screen flex flex-col md:flex-row">
       {/* Auth Form Side */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center items-center p-4 md:p-8 bg-white dark:bg-darkmode">
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-center p-4 md:p-8 bg-white dark:bg-gray-900">
         <div className="w-full max-w-md">
           <div className="flex justify-between items-center mb-6">
             <div className="flex items-center gap-3">

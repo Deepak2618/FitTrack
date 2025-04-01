@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply font-sans antialiased bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200;
+    @apply font-sans antialiased bg-gray-50 dark:bg-gray-950 text-gray-800 dark:text-gray-200;
     background-image: 
       radial-gradient(at 0% 0%, rgba(108, 92, 231, 0.1) 0px, transparent 50%),
       radial-gradient(at 100% 0%, rgba(45, 212, 191, 0.1) 0px, transparent 50%),
@@ -63,7 +63,7 @@
   }
   
   .dark .card {
-    background-color: rgba(30, 41, 59, 0.85);
+    background-color: rgba(17, 24, 39, 0.95); /* darker background in dark mode */
     border: 1px solid rgba(255, 255, 255, 0.05);
     color: #D1D5DB; /* text-gray-300 */
   }
@@ -116,7 +116,7 @@
   }
   
   .dark .glass-panel {
-    background: rgba(17, 24, 39, 0.8);
+    background: rgba(15, 23, 42, 0.9); /* darker slate-900 background */
     border: 1px solid rgba(255, 255, 255, 0.05);
     color: #D1D5DB; /* text-gray-300 */
   }
